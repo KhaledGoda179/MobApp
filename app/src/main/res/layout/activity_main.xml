@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+
+
+    <TextView
+        android:id="@+id/TV_Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect \n friends \n easily &amp; \nquickly"
+        android:textSize="68dp"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/TV_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_margin="20dp"
+        android:text="Our chat app is the perfect way to stay \n connected with friends and family."
+        android:textColor="#80FFFFFF"
+        android:textSize="16dp"
+        android:fontFamily="@font/medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TV_Connect" />
+
+
+<LinearLayout
+    android:id="@+id/LI_Logos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toBottomOf="@id/TV_Text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_margin="20dp">
+
+
+    <ImageView
+        style="@style/SignInLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/facebook"
+        />
+    <ImageView
+        style="@style/SignInLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/google"
+        />
+    <ImageView
+        style="@style/SignInLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/apple"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/IV_OR"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1"
+        app:layout_constraintTop_toBottomOf="@id/LI_Logos"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BT_SignUP"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sign up withn mail"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:cornerRadius="20dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/IV_OR"
+        android:backgroundTint="#1AFFFFFF"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Existing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BT_SignUP"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

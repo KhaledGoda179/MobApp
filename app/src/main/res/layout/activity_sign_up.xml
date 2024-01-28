@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/TV_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with Email"
+        android:fontFamily="@font/bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="145dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#3D4A7A"/>
+
+    <TextView
+        android:id="@+id/TV_GetChatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_SignUp"
+        android:text="Get chatting with friends and family\n today by signing up for our chat app!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/TV_YourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name"
+        android:fontFamily="@font/medium"
+        android:textColor="#3D4A7A"
+        app:layout_constraintTop_toBottomOf="@id/TV_GetChatting"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_YourName"
+        app:layout_constraintStart_toStartOf="@id/TV_YourName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/TV_YourEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your email"
+        android:textColor="#3D4A7A"
+        android:fontFamily="@font/medium"
+        app:layout_constraintTop_toBottomOf="@id/TV_YourName"
+        app:layout_constraintStart_toStartOf="@id/TV_YourName"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_YourEmail"
+        app:layout_constraintStart_toStartOf="@id/TV_YourEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/TV_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textColor="#3D4A7A"
+        android:fontFamily="@font/medium"
+        app:layout_constraintTop_toBottomOf="@id/TV_YourEmail"
+        app:layout_constraintStart_toStartOf="@id/TV_YourName"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_Password"
+        app:layout_constraintStart_toStartOf="@id/TV_YourEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/TV_ConPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        android:textColor="#3D4A7A"
+        android:fontFamily="@font/medium"
+        app:layout_constraintTop_toBottomOf="@id/TV_Password"
+        app:layout_constraintStart_toStartOf="@id/TV_YourName"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_ConPassword"
+        app:layout_constraintStart_toStartOf="@id/TV_YourName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        style="@style/Btton_BlueBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Create an account"
+        android:fontFamily="@font/bold"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
